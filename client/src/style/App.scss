@@ -1,0 +1,109 @@
+$primary: #FFAD40;
+//$secondary: #b30000;
+$secondary: #FFEFD9;
+
+
+@font-face{
+  font-family: 'Quicksand';
+  src: local('Quicksand'), url(../fonts/Quicksand-Regular.ttf) format('truetype');
+  font-weight: normal;
+}
+@font-face{
+  font-family: 'Quicksand';
+  src: local('Quicksand'), url(../fonts/Quicksand-Bold.ttf) format('truetype');
+  font-weight: bold;
+}
+
+
+.App {
+  text-align: center;
+  height: 100vh;
+}
+
+
+.sectionHeadline{
+  font-family: 'Quicksand';
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+.pageButton{
+  background-color: $primary;
+  color: $secondary;
+  font-family: 'Quicksand';
+  padding: 10px;
+  border-radius: 3px;
+  box-shadow: 3px 3px 2px lightgrey;
+
+  
+  &:hover{
+    text-decoration: none;
+    font-weight: bold;
+    color: $secondary;
+  }
+}
+
+.pageButton-inverse{
+  background-color: $secondary;
+  color: $primary;
+  font-family: 'Quicksand';
+  padding: 10px;
+  border-radius: 3px;
+  box-shadow: 3px 3px 2px lightgrey;
+
+  
+  &:hover{
+    text-decoration: none;
+    font-weight: bold;
+    color: $primary;
+  }
+
+}
+
+.goButton{
+  color: $secondary;
+  background-color: $primary;
+  font-family: 'Quicksand';
+  padding: 10px;
+  border-radius: 3px;
+  box-shadow: 3px 3px 2px $secondary;  
+
+  &:hover{
+    text-decoration: none;
+    font-weight: bold;
+    color: $secondary;
+  }
+}   
+
+.description{
+  text-align: center;
+}
+
+.video {
+  display: none;
+}
+
+.alert {
+  visibility: hidden;
+}
+
+.box {
+  float: left;
+  width: 50%;
+  padding: 20px;
+  font-size: 40px;
+  visibility: hidden;
+}
+
+.footerContent {
+  font-family: 'Quicksand';
+  padding-top: 15px;
+  padding-bottom: 5px;
+  bottom: 0px;
+  position: relative;
+  z-index: 20;
+  background-color: $primary;
+  color: $secondary;
+  text-align: center;
+  width: 100%;
+}
+

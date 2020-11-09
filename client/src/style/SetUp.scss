@@ -1,0 +1,75 @@
+@import './App.scss';
+
+.wrapper{
+    display: flex;
+    width: 100%;
+
+}
+
+#sidebar{
+    width: 15vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    background: $secondary;
+    color: white;
+    transition: all 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-button{
+    font-weight: bold;
+    text-align: center;
+    padding: 2px 8px;
+    color: $primary;
+    border: 2px solid $primary;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.selection-overview{
+    width: 85vw;
+    min-height: 500px;
+    text-align: center;
+    padding-bottom: 30px;
+
+
+    .selection-headline{
+        font-family: 'Quicksand';
+        color: $primary;
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+    .category{
+        text-align: center;
+        border: 2px solid $secondary;
+        box-shadow: 5px 10px 5px lightgrey;
+        border-radius: 8px;
+        
+    }
+
+    .exercise{
+        background-color: $secondary;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 8px;
+
+        &:hover{
+            background-color: $primary;
+            box-shadow: 5px 10px 5px lightgrey;
+            .info-button{
+                color: $secondary;
+                border: 2px solid $secondary;
+            }
+        }
+
+        .exercise-image{
+            width: 80%;
+            margin-top: 10px;
+        }
+    }
+    
+}
