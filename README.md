@@ -6,14 +6,14 @@ This React-App uses Pose Estimation with the pre-trained model PoseNet to detect
 
 In src/components/ExerciseScreen.js make sure that l. 200-201 are commented the following way:
 
-``` 
-    {/*{currentVideo}*/} 
-    <video id="video" className="video"></video> 
+```
+    {/*{currentVideo}*/}
+    <video id="video" className="video"></video>
 ```
 
 In util/poseestimation.js the webcam needs to be loaded into the page like this (l.42)
 
-``` 
+```
     async function loadVideo() {
     const video = await setupCamera();
     //Comment in for static video analysis
@@ -24,22 +24,19 @@ In util/poseestimation.js the webcam needs to be loaded into the page like this 
 
 In src/components/ExerciseScreen.js make sure that l. 200-201 are commented the following way:
 
-``` 
+```
     {currentVideo}
     {/*<video id="video" className="video"></video> */}
 ```
 
 In util/poseestimation.js the webcam needs to be loaded into the page like this (l.42)
 
-``` 
+```
     async function loadVideo() {
     //const video = await setupCamera();
     //Comment in for static video analysis
     const video = document.getElementById('staticVideo'); //staticVideo
 ```
-
-
-
 
 ### Start the application in development mode
 
@@ -50,5 +47,7 @@ npm start
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+### Developed by:
 
-
+Franziska Lang
+Larissa Mikolaschek
